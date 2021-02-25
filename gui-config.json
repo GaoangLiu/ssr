@@ -1,0 +1,49 @@
+{
+	"configs": [
+		{
+			"enable": true,
+			"group": "",
+			"id": "CDA89E3D65CF80D7120F81BFB044991B",
+			"method": "chacha20",
+			"obfs": "plain",
+			"obfsparam": "",
+			"password": "7ijwxX",
+			"protocol": "auth_aes128_md5",
+			"protocolparam": "",
+			"remarks": "oooz",
+			"remarks_base64": "b29veg",
+			"server": "149.129.71.1",
+			"server_port": 20491,
+			"checked": true
+		}
+	],
+	"index": 0,
+	"enable": true,
+	"autoLaunch": false,
+	"shareOverLan": false,
+	"localPort": 1080,
+	"ssrPath": "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks",
+	"pacPort": 2333,
+	"sysProxyMode": 2,
+	"serverSubscribes": [],
+	"httpProxyEnable": true,
+	"globalShortcuts": {
+		"toggleWindow": {
+			"key": "",
+			"enable": false
+		},
+		"switchSystemProxy": {
+			"key": "",
+			"enable": false
+		}
+	},
+	"windowShortcuts": {
+		"toggleMenu": {
+			"key": "",
+			"enable": false
+		}
+	},
+	"httpProxyPort": 12333,
+	"autoUpdateSubscribes": true,
+	"subscribeUpdateInterval": 24
+}

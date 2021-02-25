@@ -1,0 +1,256 @@
+2019-09-02 22:34:21:813 [info] Checking for update
+2019-09-02 22:34:22:150 [info] Generated new staging user ID: a6364401-a266-5a37-89e8-fc476a95b4d3
+2019-09-02 22:34:22:194 [error] Error: Error: net::ERR_PROXY_CONNECTION_FAILED
+    at CancellationToken.createPromise (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/builder-util-runtime/src/CancellationToken.ts:51:12)
+    at ElectronHttpExecutor.doApiRequest (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/builder-util-runtime/src/httpExecutor.ts:84:30)
+    at ElectronHttpExecutor.request (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/builder-util-runtime/src/httpExecutor.ts:74:17)
+    at GitHubProvider.httpRequest (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/Provider.ts:29:26)
+    at /Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/GitHubProvider.ts:38:41
+    at Generator.next (<anonymous>)
+From previous event:
+    at GitHubProvider.getLatestVersion (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/GitHubProvider.ts:35:25)
+    at /Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/AppUpdater.ts:308:25
+    at Generator.next (<anonymous>)
+    at runCallback (timers.js:781:20)
+    at tryOnImmediate (timers.js:743:5)
+    at processImmediate [as _immediateCallback] (timers.js:714:5)
+From previous event:
+    at MacUpdater.getUpdateInfo (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/AppUpdater.ts:298:32)
+    at /Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/AppUpdater.ts:312:35
+    at Generator.next (<anonymous>)
+From previous event:
+    at MacUpdater.doCheckForUpdates (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/AppUpdater.ts:311:34)
+    at /Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/AppUpdater.ts:283:25
+    at Generator.next (<anonymous>)
+    at runCallback (timers.js:781:20)
+    at tryOnImmediate (timers.js:743:5)
+    at processImmediate [as _immediateCallback] (timers.js:714:5)
+From previous event:
+    at MacUpdater._checkForUpdates (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/AppUpdater.ts:278:33)
+    at MacUpdater.checkForUpdates (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/AppUpdater.ts:217:35)
+    at W (/Applications/electron-ssr.app/Contents/Resources/app.asar/dist/electron/main.js:1:59493)
+    at /Applications/electron-ssr.app/Contents/Resources/app.asar/dist/electron/main.js:1:83314
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+2019-09-02 22:34:25:115 [info] start download ssr
+2019-09-02 22:34:34:820 [info] ssr download success
+2019-09-02 22:35:41:304 [info] run command: python /Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/local.py -s 149.129.71.1 -p 20491 -k ****** -m chacha20 -O auth_aes128_md5 -o plain -b 127.0.0.1 -l 1080
+2019-09-02 22:35:41:314 [info] pac server listen at: 127.0.0.1:2333
+2019-09-02 22:35:41:314 [info] http proxy server listen at: 127.0.0.1:12333
+2019-09-02 22:35:41:597 [info] IPv6 not support
+
+2019-09-02 22:35:41:597 [error] Traceback (most recent call last):
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/local.py", line 81, in <module>
+    main()
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/local.py", line 43, in main
+    config = shell.get_config(True)
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/../shadowsocks/shell.py", line 299, in get_config
+    check_config(config, is_local)
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/../shadowsocks/shell.py", line 129, in check_config
+    encrypt.try_cipher(config['password'], config['method'])
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/../shadowsocks/encrypt.py", line 46, in try_cipher
+    Encryptor(key, method)
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/../shadowsocks/encrypt.py", line 90, in __init__
+    random_string(self._method_info[1]))
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/../shadowsocks/encrypt.py", line 119, in get_cipher
+    return m[2](method, key, iv, op)
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/../shadowsocks/crypto/sodium.py", line 71, in __init__
+    load_libsodium()
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/../shadowsocks/crypto/sodium.py", line 42, in load_libsodium
+    raise Exception('libsodium not found')
+Exception: libsodium not found
+
+2019-09-02 22:35:50:874 [info] Kill client
+2019-09-02 22:35:50:900 [info] pac server closed.
+2019-09-02 22:35:50:900 [info] http proxy server closed.
+2019-09-02 22:35:50:907 [error] Unhandled Rejection at: Promise [object Promise], reason: Error: kill ESRCH
+2019-09-02 22:35:52:502 [info] Kill client
+2019-09-02 22:35:52:603 [info] pac server listen at: 127.0.0.1:2333
+2019-09-02 22:35:52:604 [info] http proxy server listen at: 127.0.0.1:12333
+2019-09-02 22:35:52:605 [error] Unhandled Rejection at: Promise [object Promise], reason: Error: kill ESRCH
+2019-09-02 22:35:52:612 [error] Unhandled Rejection at: Promise [object Promise], reason: SentryError: HTTP Error (429): Creation of this event was denied due to rate limiting
+2019-09-02 22:35:52:613 [error] Unhandled Rejection at: Promise [object Promise], reason: SentryError: HTTP Error (429): Creation of this event was denied due to rate limiting
+2019-09-02 22:35:52:869 [error] Unhandled Rejection at: Promise [object Promise], reason: SentryError: HTTP Error (429): Creation of this event was denied due to rate limiting
+2019-09-02 22:35:52:870 [error] Unhandled Rejection at: Promise [object Promise], reason: SentryError: HTTP Error (429): Creation of this event was denied due to rate limiting
+2019-09-02 22:35:55:878 [error] 进程 20868 可能无法关闭
+2019-09-02 22:35:57:503 [error] 进程 20868 可能无法关闭
+2019-09-02 22:37:44:641 [info] Kill client
+2019-09-02 22:38:47:843 [info] Checking for update
+2019-09-02 22:38:48:157 [info] run command: python /Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/local.py -s 149.129.71.1 -p 20491 -k ****** -m chacha20 -O auth_aes128_md5 -o plain -b 127.0.0.1 -l 1080
+2019-09-02 22:38:48:163 [info] pac server listen at: 127.0.0.1:2333
+2019-09-02 22:38:48:164 [info] http proxy server listen at: 127.0.0.1:12333
+2019-09-02 22:38:48:237 [error] Error: Error: net::ERR_PROXY_CONNECTION_FAILED
+    at CancellationToken.createPromise (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/builder-util-runtime/src/CancellationToken.ts:51:12)
+    at ElectronHttpExecutor.doApiRequest (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/builder-util-runtime/src/httpExecutor.ts:84:30)
+    at ElectronHttpExecutor.request (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/builder-util-runtime/src/httpExecutor.ts:74:17)
+    at GitHubProvider.httpRequest (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/Provider.ts:29:26)
+    at /Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/GitHubProvider.ts:38:41
+    at Generator.next (<anonymous>)
+From previous event:
+    at GitHubProvider.getLatestVersion (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/GitHubProvider.ts:35:25)
+    at /Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/AppUpdater.ts:308:25
+    at Generator.next (<anonymous>)
+    at runCallback (timers.js:781:20)
+    at tryOnImmediate (timers.js:743:5)
+    at processImmediate [as _immediateCallback] (timers.js:714:5)
+From previous event:
+    at MacUpdater.getUpdateInfo (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/AppUpdater.ts:298:32)
+    at /Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/AppUpdater.ts:312:35
+    at Generator.next (<anonymous>)
+From previous event:
+    at MacUpdater.doCheckForUpdates (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/AppUpdater.ts:311:34)
+    at /Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/AppUpdater.ts:283:25
+    at Generator.next (<anonymous>)
+    at runCallback (timers.js:781:20)
+    at tryOnImmediate (timers.js:743:5)
+    at processImmediate [as _immediateCallback] (timers.js:714:5)
+From previous event:
+    at MacUpdater._checkForUpdates (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/AppUpdater.ts:278:33)
+    at MacUpdater.checkForUpdates (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/AppUpdater.ts:217:35)
+    at W (/Applications/electron-ssr.app/Contents/Resources/app.asar/dist/electron/main.js:1:59493)
+    at /Applications/electron-ssr.app/Contents/Resources/app.asar/dist/electron/main.js:1:83314
+    at <anonymous>
+2019-09-02 22:38:48:346 [info] IPv6 not support
+
+2019-09-02 22:38:48:347 [error] Traceback (most recent call last):
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/local.py", line 81, in <module>
+    main()
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/local.py", line 43, in main
+    config = shell.get_config(True)
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/../shadowsocks/shell.py", line 299, in get_config
+    check_config(config, is_local)
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/../shadowsocks/shell.py", line 129, in check_config
+    encrypt.try_cipher(config['password'], config['method'])
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/../shadowsocks/encrypt.py", line 46, in try_cipher
+
+2019-09-02 22:38:48:348 [error]     Encryptor(key, method)
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/../shadowsocks/encrypt.py", line 90, in __init__
+    random_string(self._method_info[1]))
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/../shadowsocks/encrypt.py", line 119, in get_cipher
+    return m[2](method, key, iv, op)
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/../shadowsocks/crypto/sodium.py", line 71, in __init__
+    load_libsodium()
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/../shadowsocks/crypto/sodium.py", line 42, in load_libsodium
+    raise Exception('libsodium not found')
+Exception: libsodium not found
+
+2019-09-02 22:39:59:530 [info] Kill client
+2019-09-02 22:40:44:959 [info] Checking for update
+2019-09-02 22:40:45:259 [info] run command: python /Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/local.py -s 149.129.71.1 -p 20491 -k ****** -m chacha20 -O auth_aes128_md5 -o plain -b 127.0.0.1 -l 1080
+2019-09-02 22:40:45:263 [info] pac server listen at: 127.0.0.1:2333
+2019-09-02 22:40:45:264 [info] http proxy server listen at: 127.0.0.1:12333
+2019-09-02 22:40:45:338 [error] Error: Error: net::ERR_PROXY_CONNECTION_FAILED
+    at CancellationToken.createPromise (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/builder-util-runtime/src/CancellationToken.ts:51:12)
+    at ElectronHttpExecutor.doApiRequest (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/builder-util-runtime/src/httpExecutor.ts:84:30)
+    at ElectronHttpExecutor.request (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/builder-util-runtime/src/httpExecutor.ts:74:17)
+    at GitHubProvider.httpRequest (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/Provider.ts:29:26)
+    at /Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/GitHubProvider.ts:38:41
+    at Generator.next (<anonymous>)
+From previous event:
+    at GitHubProvider.getLatestVersion (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/GitHubProvider.ts:35:25)
+    at /Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/AppUpdater.ts:308:25
+    at Generator.next (<anonymous>)
+    at runCallback (timers.js:781:20)
+    at tryOnImmediate (timers.js:743:5)
+    at processImmediate [as _immediateCallback] (timers.js:714:5)
+From previous event:
+    at MacUpdater.getUpdateInfo (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/AppUpdater.ts:298:32)
+    at /Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/AppUpdater.ts:312:35
+    at Generator.next (<anonymous>)
+From previous event:
+    at MacUpdater.doCheckForUpdates (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/AppUpdater.ts:311:34)
+    at /Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/AppUpdater.ts:283:25
+    at Generator.next (<anonymous>)
+    at runCallback (timers.js:781:20)
+    at tryOnImmediate (timers.js:743:5)
+    at processImmediate [as _immediateCallback] (timers.js:714:5)
+From previous event:
+    at MacUpdater._checkForUpdates (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/AppUpdater.ts:278:33)
+    at MacUpdater.checkForUpdates (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/AppUpdater.ts:217:35)
+    at W (/Applications/electron-ssr.app/Contents/Resources/app.asar/dist/electron/main.js:1:59493)
+    at /Applications/electron-ssr.app/Contents/Resources/app.asar/dist/electron/main.js:1:83314
+    at <anonymous>
+2019-09-02 22:40:45:449 [info] IPv6 not support
+
+2019-09-02 22:40:45:450 [error] Traceback (most recent call last):
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/local.py", line 81, in <module>
+    main()
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/local.py", line 43, in main
+    config = shell.get_config(True)
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/../shadowsocks/shell.py", line 299, in get_config
+    check_config(config, is_local)
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/../shadowsocks/shell.py", line 129, in check_config
+    encrypt.try_cipher(config['password'], config['method'])
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/../shadowsocks/encrypt.py", line 46, in try_cipher
+
+2019-09-02 22:40:45:451 [error]     Encryptor(key, method)
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/../shadowsocks/encrypt.py", line 90, in __init__
+    random_string(self._method_info[1]))
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/../shadowsocks/encrypt.py", line 119, in get_cipher
+    return m[2](method, key, iv, op)
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/../shadowsocks/crypto/sodium.py", line 71, in __init__
+    load_libsodium()
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/../shadowsocks/crypto/sodium.py", line 42, in load_libsodium
+    raise Exception('libsodium not found')
+Exception: libsodium not found
+
+2019-09-02 22:40:47:876 [info] Kill client
+2019-09-02 22:43:08:391 [info] Checking for update
+2019-09-02 22:43:08:704 [info] run command: python /Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/local.py -s 149.129.71.1 -p 20491 -k ****** -m chacha20 -O auth_aes128_md5 -o plain -b 127.0.0.1 -l 1080
+2019-09-02 22:43:08:710 [info] pac server listen at: 127.0.0.1:2333
+2019-09-02 22:43:08:710 [info] http proxy server listen at: 127.0.0.1:12333
+2019-09-02 22:43:08:781 [error] Error: Error: net::ERR_PROXY_CONNECTION_FAILED
+    at CancellationToken.createPromise (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/builder-util-runtime/src/CancellationToken.ts:51:12)
+    at ElectronHttpExecutor.doApiRequest (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/builder-util-runtime/src/httpExecutor.ts:84:30)
+    at ElectronHttpExecutor.request (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/builder-util-runtime/src/httpExecutor.ts:74:17)
+    at GitHubProvider.httpRequest (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/Provider.ts:29:26)
+    at /Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/GitHubProvider.ts:38:41
+    at Generator.next (<anonymous>)
+From previous event:
+    at GitHubProvider.getLatestVersion (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/GitHubProvider.ts:35:25)
+    at /Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/AppUpdater.ts:308:25
+    at Generator.next (<anonymous>)
+    at runCallback (timers.js:781:20)
+    at tryOnImmediate (timers.js:743:5)
+    at processImmediate [as _immediateCallback] (timers.js:714:5)
+From previous event:
+    at MacUpdater.getUpdateInfo (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/AppUpdater.ts:298:32)
+    at /Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/AppUpdater.ts:312:35
+    at Generator.next (<anonymous>)
+From previous event:
+    at MacUpdater.doCheckForUpdates (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/AppUpdater.ts:311:34)
+    at /Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/AppUpdater.ts:283:25
+    at Generator.next (<anonymous>)
+    at runCallback (timers.js:781:20)
+    at tryOnImmediate (timers.js:743:5)
+    at processImmediate [as _immediateCallback] (timers.js:714:5)
+From previous event:
+    at MacUpdater._checkForUpdates (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/AppUpdater.ts:278:33)
+    at MacUpdater.checkForUpdates (/Applications/electron-ssr.app/Contents/Resources/app.asar/node_modules/electron-updater/src/AppUpdater.ts:217:35)
+    at W (/Applications/electron-ssr.app/Contents/Resources/app.asar/dist/electron/main.js:1:59493)
+    at /Applications/electron-ssr.app/Contents/Resources/app.asar/dist/electron/main.js:1:83314
+    at <anonymous>
+2019-09-02 22:43:08:882 [info] IPv6 not support
+
+2019-09-02 22:43:08:883 [error] Traceback (most recent call last):
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/local.py", line 81, in <module>
+    main()
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/local.py", line 43, in main
+    config = shell.get_config(True)
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/../shadowsocks/shell.py", line 299, in get_config
+    check_config(config, is_local)
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/../shadowsocks/shell.py", line 129, in check_config
+    encrypt.try_cipher(config['password'], config['method'])
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/../shadowsocks/encrypt.py", line 46, in try_cipher
+    Encryptor(key, method)
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/../shadowsocks/encrypt.py", line 90, in __init__
+    random_string(self._method_info[1]))
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/../shadowsocks/encrypt.py", line 119, in get_cipher
+    return m[2](method, key, iv, op)
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/../shadowsocks/crypto/sodium.py", line 71, in __init__
+    load_libsodium()
+  File "/Users/alpha/Library/Application Support/electron-ssr/shadowsocksr/shadowsocks/../shadowsocks/crypto/sodium.py", line 42, in load_libsodium
+    raise Exception('libsodium not found')
+Exception: libsodium not found
+
+2019-09-02 22:44:36:968 [info] Kill client

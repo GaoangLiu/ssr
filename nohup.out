@@ -1,0 +1,4 @@
+2021-02-25 10:25:03 INFO     util.py:85 loading libcrypto from /home/gaoang/anaconda3/envs/dl/lib/libcrypto.so.1.1
+2021-02-25 10:25:03 INFO     local.py:48 local start with protocol[auth_aes128_md5] password [b'Ichdzy'] method [aes-256-ctr] obfs [tls1.2_ticket_auth] obfs_param [08c229368.microsoft.com]
+2021-02-25 10:25:03 INFO     local.py:52 starting local at 127.0.0.1:10801
+2021-02-25 10:25:03 INFO     asyncdns.py:324 dns server: [('127.0.0.53', 53)]
